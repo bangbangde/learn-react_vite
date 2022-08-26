@@ -14,14 +14,14 @@ class ErrorBundary extends React.Component {
       hasError: false
     }
   }
-  // static getDerivedStateFromError(error) {
-  //   console.log('getDerivedStateFromError:', error);
-  //   return {hasError: true};
-  // }
+  static getDerivedStateFromError(error) {
+    console.log('getDerivedStateFromError:', error);
+    return {hasError: true};
+  }
 
-  // componentDidCatch(error, errorInfo) {
-  //   console.log('componentDidCatch:', error, errorInfo);
-  // }
+  componentDidCatch(error, errorInfo) {
+    console.log('componentDidCatch:', error, errorInfo);
+  }
 
   handleClick = ev => {
     // react 会从头重新加载子组件
