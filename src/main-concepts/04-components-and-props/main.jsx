@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 
 // function components
 function Welcom(props) {
+  // props.name += '!'; // Object.freeze # 严格模式下报错
   return <h1>Hello, {props.name}</h1>
 }
 
